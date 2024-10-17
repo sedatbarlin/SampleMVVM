@@ -10,6 +10,7 @@ import SnapKit
 
 class TaskListViewController: UIViewController {
     
+    private let pageTitleLabel = UILabel()
     private let taskTableView = TaskTableView()
     private let addTaskButton = UIButton()
     private let viewModel = TaskListViewModel()
@@ -22,7 +23,15 @@ class TaskListViewController: UIViewController {
     
     private func setupUI() {
         view.backgroundColor = .white
-        title = "To-Do List"
+        
+        pageTitleLabel.text = "To-Do App"
+        pageTitleLabel.textColor = .black
+        pageTitleLabel.font = UIFont.boldSystemFont(ofSize: 24)
+        view.addSubview(pageTitleLabel)
+        pageTitleLabel.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(20)
+            make.centerX.equalToSuperview()
+        }
         
         addTaskButton.setTitle("Add Task", for: .normal)
         addTaskButton.setTitleColor(.white, for: .normal)
@@ -39,7 +48,7 @@ class TaskListViewController: UIViewController {
         
         view.addSubview(taskTableView)
         taskTableView.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.top.equalTo(pageTitleLabel.snp.bottom).offset(20)
             make.left.right.equalToSuperview()
             make.bottom.equalTo(addTaskButton.snp.top).offset(-16)
         }
@@ -64,12 +73,14 @@ class TaskListViewController: UIViewController {
         alertController.addTextField { textField in
             textField.placeholder = "Task title"
         }
+        
         let addAction = UIAlertAction(title: "Add", style: .default) { [weak self] _ in
             if let taskTitle = alertController.textFields?.first?.text, !taskTitle.isEmpty {
                 self?.viewModel.addTask(title: taskTitle)
                 self?.taskTableView.updateTasks(self?.viewModel.tasks ?? [])
             }
         }
+        
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alertController.addAction(addAction)
         alertController.addAction(cancelAction)

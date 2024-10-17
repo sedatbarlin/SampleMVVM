@@ -23,7 +23,9 @@ class TaskCell: UITableViewCell {
     }
     
     private func setupUI() {
+        backgroundColor = .clear
         taskLabel.font = UIFont.systemFont(ofSize: 16)
+        taskLabel.textColor = .black
         contentView.addSubview(taskLabel)
         taskLabel.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(16)

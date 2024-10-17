@@ -25,6 +25,7 @@ class TaskTableView: UIView, UITableViewDataSource, UITableViewDelegate {
     }
     
     private func setupTableView() {
+        tableView.backgroundColor = .clear
         addSubview(tableView)
         tableView.register(TaskCell.self, forCellReuseIdentifier: "TaskCell")
         tableView.dataSource = self

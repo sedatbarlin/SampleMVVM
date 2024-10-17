@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AFC64A252CBED33C00DCE2ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC64A242CBED33C00DCE2ED /* AppDelegate.swift */; };
-		AFC64A272CBED33C00DCE2ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC64A262CBED33C00DCE2ED /* SceneDelegate.swift */; };
 		AFC64A2E2CBED33E00DCE2ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC64A2D2CBED33E00DCE2ED /* Assets.xcassets */; };
 		AFC64A312CBED33E00DCE2ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC64A2F2CBED33E00DCE2ED /* LaunchScreen.storyboard */; };
 		AFC64A392CBED3FE00DCE2ED /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC64A382CBED3FE00DCE2ED /* Task.swift */; };
@@ -22,7 +21,6 @@
 /* Begin PBXFileReference section */
 		AFC64A212CBED33C00DCE2ED /* SampleMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC64A242CBED33C00DCE2ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFC64A262CBED33C00DCE2ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AFC64A2D2CBED33E00DCE2ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFC64A302CBED33E00DCE2ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFC64A322CBED33E00DCE2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				AFC64A242CBED33C00DCE2ED /* AppDelegate.swift */,
-				AFC64A262CBED33C00DCE2ED /* SceneDelegate.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -199,7 +196,6 @@
 				AFC64A3B2CBED41100DCE2ED /* TaskListViewModel.swift in Sources */,
 				AFC64A252CBED33C00DCE2ED /* AppDelegate.swift in Sources */,
 				AFC64A3D2CBED42300DCE2ED /* TaskCell.swift in Sources */,
-				AFC64A272CBED33C00DCE2ED /* SceneDelegate.swift in Sources */,
 				AFC64A4A2CC1B1F500DCE2ED /* TaskTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
