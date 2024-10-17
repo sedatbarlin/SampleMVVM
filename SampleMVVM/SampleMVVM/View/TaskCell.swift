@@ -37,8 +37,8 @@ class TaskCell: UITableViewCell {
         taskLabel.textColor = .black
         contentView.addSubview(taskLabel)
         taskLabel.snp.makeConstraints { make in
-            make.left.equalToSuperview().offset(16)
-            make.right.equalTo(completedIndicatorImageView.snp.left)
+            make.left.equalToSuperview().offset(20)
+            make.right.equalTo(completedIndicatorImageView.snp.left).offset(-16)
             make.centerY.equalToSuperview()
         }
     }
