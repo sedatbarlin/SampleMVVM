@@ -59,6 +59,10 @@ class TaskTableView: UIView, UITableViewDataSource, UITableViewDelegate {
         return .delete
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             onTaskDeleted?(indexPath.row)

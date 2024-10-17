@@ -23,21 +23,23 @@ class TaskCell: UITableViewCell {
     }
     
     private func setupUI() {
-        backgroundColor = .clear
-        taskLabel.font = UIFont.systemFont(ofSize: 16)
-        taskLabel.textColor = .black
-        contentView.addSubview(taskLabel)
-        taskLabel.snp.makeConstraints { make in
-            make.left.equalToSuperview().offset(16)
-            make.centerY.equalToSuperview()
-        }
-        
         completedIndicatorImageView.contentMode = .scaleAspectFit
         contentView.addSubview(completedIndicatorImageView)
         completedIndicatorImageView.snp.makeConstraints { make in
             make.right.equalToSuperview().offset(-16)
             make.centerY.equalToSuperview()
             make.width.height.equalTo(24)
+        }
+        
+        backgroundColor = .clear
+        taskLabel.font = UIFont.systemFont(ofSize: 16)
+        taskLabel.numberOfLines = 0
+        taskLabel.textColor = .black
+        contentView.addSubview(taskLabel)
+        taskLabel.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(16)
+            make.right.equalTo(completedIndicatorImageView.snp.left)
+            make.centerY.equalToSuperview()
         }
     }
     
