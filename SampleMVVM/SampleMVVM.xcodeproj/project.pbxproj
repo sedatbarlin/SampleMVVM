@@ -16,6 +16,7 @@
 		AFC64A3D2CBED42300DCE2ED /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC64A3C2CBED42300DCE2ED /* TaskCell.swift */; };
 		AFC64A3F2CBED43D00DCE2ED /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC64A3E2CBED43D00DCE2ED /* TaskListViewController.swift */; };
 		AFC64A422CBED45800DCE2ED /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AFC64A412CBED45800DCE2ED /* SnapKit */; };
+		AFC64A4A2CC1B1F500DCE2ED /* TaskTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC64A492CC1B1F500DCE2ED /* TaskTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		AFC64A3A2CBED41100DCE2ED /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 		AFC64A3C2CBED42300DCE2ED /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		AFC64A3E2CBED43D00DCE2ED /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		AFC64A492CC1B1F500DCE2ED /* TaskTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +67,7 @@
 				AFC64A432CBED4EB00DCE2ED /* Model */,
 				AFC64A442CBED4F100DCE2ED /* View */,
 				AFC64A452CBED4F500DCE2ED /* ViewModel */,
-				AFC64A462CBED4FB00DCE2ED /* Controller */,
-				AFC64A472CBED53800DCE2ED /* Helpers */,
+				AFC64A472CBED53800DCE2ED /* Supporting */,
 				AFC64A482CBED55C00DCE2ED /* Resources */,
 				AFC64A322CBED33E00DCE2ED /* Info.plist */,
 			);
@@ -84,7 +85,9 @@
 		AFC64A442CBED4F100DCE2ED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AFC64A3E2CBED43D00DCE2ED /* TaskListViewController.swift */,
 				AFC64A3C2CBED42300DCE2ED /* TaskCell.swift */,
+				AFC64A492CC1B1F500DCE2ED /* TaskTableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,21 +100,13 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		AFC64A462CBED4FB00DCE2ED /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				AFC64A3E2CBED43D00DCE2ED /* TaskListViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		AFC64A472CBED53800DCE2ED /* Helpers */ = {
+		AFC64A472CBED53800DCE2ED /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
 				AFC64A242CBED33C00DCE2ED /* AppDelegate.swift */,
 				AFC64A262CBED33C00DCE2ED /* SceneDelegate.swift */,
 			);
-			path = Helpers;
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 		AFC64A482CBED55C00DCE2ED /* Resources */ = {
@@ -205,6 +200,7 @@
 				AFC64A252CBED33C00DCE2ED /* AppDelegate.swift in Sources */,
 				AFC64A3D2CBED42300DCE2ED /* TaskCell.swift in Sources */,
 				AFC64A272CBED33C00DCE2ED /* SceneDelegate.swift in Sources */,
+				AFC64A4A2CC1B1F500DCE2ED /* TaskTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
